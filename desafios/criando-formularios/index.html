@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Agende sua mentoria</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Mentoria</h1>
+            <p>Preencha o formulário abaixo para <br> agendar a sua mentoria</p>
+        </header>
+        <main>
+            <form>
+
+                <fieldset>
+                    <legend>Informações pessoais</legend>
+                    <div class="input-wrapper">
+                        <div class="name">
+                            <div class="input-wrapper">
+                                <label for="event-name">Nome</label> <br>
+                                <input type="text" id="event-name">
+                            </div class="input-wrapper">
+
+                            <div class="input-wrapper">
+                                <label for="event-lastname">Sobrenome</label> <br>
+                                <input type="text" id="event-lastname">
+                            </div class="input-wrapper">
+
+                        </div>
+
+                            <div class="input-wrapper">
+                                <label for="event-email">Email</label> <span>(digite um email válido)</span> <br>
+                                <input type="email" id="event-email">
+                            </div class="input-wrapper">
+                            
+                            <div class="input-wrapper">
+                                <label for="event-password">Senha</label> <span>(mínimo 6 caracteres)</span> <br>
+                                <input type="password" id="event-password">
+                            </div class="input-wrapper">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informações do Mentor</legend>
+
+                    <div class="input-wrapper">
+                        <label for="event-name-mentor">Nome do seu mentor</label> <span>(só o primeiro nome)</span> <br>
+                        <input type="text" id="event-name-mentor">
+                    </div class="input-wrapper">
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Seus Horários disponíveis</legend>
+
+                    <h2>Primeira Mentoria</h2>
+
+                    <div class="col-3">
+                        <div class="input-wrapper">
+                            <label for="event-date">Data</label> <span>(DD/MM/AAAA)</span> <br>
+                            <input type="date" id="event-date">
+                        </div class="input-wrapper">
+
+                        <div class="group-2">
+                            <div class="input-wrapper">
+                                <label for="event-begin">Das</label> <br>
+                                <input type="time" id="event-begin">
+                            </div class="input-wrapper">
+
+                            <div class="input-wrapper">
+                                <label for="event-end">Até</label> <br>
+                                <input type="time" id="event-end">
+                            </div class="input-wrapper">
+                        </div>
+
+
+                    </div>
+
+                    <h2>Segunda Mentoria</h2>
+
+                    <div class="col-3">
+
+                        <div class="input-wrapper">
+                            <label for="event-date">Data</label> <span>(DD/MM/AAAA)</span> <br>
+                            <input type="date" id="event-date">
+                        </div class="input-wrapper">
+
+                        <div class="group-2">
+                            <div class="input-wrapper">
+                                <label for="event-begin">Das</label> <br>
+                                <input type="time" id="event-begin">
+                            </div class="input-wrapper">
+
+                            <div class="input-wrapper">
+                                <label for="event-end">Até</label> <br>
+                                <input type="time" id="event-end">
+                            </div class="input-wrapper">
+                        </div>
+
+                    </div>
+
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <button>Salvar</button>
+        </footer>
+    </div>
+</body>
+</html>
