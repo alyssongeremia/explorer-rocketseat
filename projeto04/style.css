@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: #ECE9FD;
+    font-family: 'Epilogue', sans-serif;
+
+    padding: 3.75rem 1.4375rem 4.125rem;
+}
+
+main {
+    max-width: 20.625rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 3rem;
+    color: #090039;
+
+    margin-bottom: 0.9375rem;
+}
+
+main p:first-child {
+    color: #7158ef;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 2rem;
+
+    margin-bottom: 17px;
+}
+
+h1 + p {
+    color: rgba(10, 0, 57, 0.64);
+    line-height: 2rem;
+
+    margin-bottom: 2rem;
+}
+
+a {
+    color: #090039;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+ul {
+    margin-top: 4.5rem;
+}
+
+ul li {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    max-width: 16.0625rem;
+
+    display: flex;
+    gap: 2.375rem;
+}
+
+ul li + li {
+    margin-top: 2rem;
+}
+
+ul li span {
+    font-weight: 800;
+    font-size: 4.5rem;
+    line-height: 5rem;
+
+    letter-spacing: -2px;
+    color: #090039;
+}
+
+
+@media (min-width: 700px) {
+
+    body {
+        padding: 5rem;
+    }
+
+    main {
+        max-width: 1020px;
+        display: flex;
+        gap: 6.25rem;
+    }
+
+    main > div {
+        max-width: 484px;
+    }
+
+    ul li {
+        gap: 3.3125rem;
+        max-width: 450px;
+        align-items: center;
+    }
+}
