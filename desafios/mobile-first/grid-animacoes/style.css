@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-header: #8E9AAF;
+    --bg-header-sm: #CBC0D3;
+    --bg-body: #EFF1FF;
+    --bg-title-card: #FEEAFA;
+
+    --ff-title: 'Staatliches', cursive;
+    --ff-paragraph: 'Palanquin', sans-serif;
+}
+
+.page {
+    max-width: 23.75rem;
+    margin: auto;
+}
+
+body {
+    background: var(--bg-body);
+    display: grid;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    height: 22rem;
+    background: var(--bg-header);
+}
+
+header img {
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-family: var(--ff-title);
+    font-size: 2.5rem;
+    line-height: 2.125rem;
+    letter-spacing: 5px;
+    font-weight: normal;
+    color: #FFFFFF;
+
+    width: 100%;
+    height: 3.0625rem;
+    background: var(--bg-header-sm);
+
+    text-align: center;
+    padding: 8px 0 30px 0;
+    margin-bottom: 50px;
+}
+
+main {
+    margin-top: 3.125rem;
+    max-width: 23.75rem;
+
+    display: grid;
+}
+
+#text-desktop, #text-mobile {
+    font-family: var(--ff-paragraph);
+    font-size: 1.25rem;
+    line-height: 20px;
+    
+    text-align: center;
+
+    max-width: 16.25rem;
+
+    margin: auto;
+    color: #23053A;
+
+    padding-bottom: 3.75rem;
+}
+
+#text-desktop {
+    display: none;
+}
+
+.cards {
+    margin: auto;
+    margin-bottom: 2rem;
+    max-width: 16.25rem;
+
+    position: relative;
+
+    animation: downtop 700ms 350ms backwards;
+}
+
+.cards h2 {
+    font-family: var(--ff-title);
+    font-size: 1.25rem;
+    line-height: 2,125rem;
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: #4A4E69;
+
+    width: 6.875rem;
+    height: 2.1875rem;
+
+    text-align: center;
+
+    padding-top: 5px;
+    border-radius: 20px;
+    background: var(--bg-title-card);
+
+    position: absolute;
+    right: 16px;
+    top: 16px;
+
+    animation: topdown 700ms 480ms backwards;
+}
+
+.cards img {
+    width: 100%;
+}
+
+#footer {
+    font-family: 'Opens-sans', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.75rem;
+    color: #4A4E69;
+    text-align: center;
+
+    display: none;
+}
+
+@keyframes downtop {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes topdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 900px) {
+    .page {
+        max-width: 900px;
+        height: 100vh;
+        margin-left: 20px;
+
+        margin: auto;
+    }
+
+    body {
+        grid-template-columns: 30% 70%;
+    }
+
+    header {
+        height: 100%;
+        
+    }
+
+    .cards {
+        height: 100%;
+        margin: 0;
+    }
+
+    main h2 {
+        display: none;
+    }
+
+    main {
+        padding-top: 2rem;
+        margin: 0;
+        height: 90vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "A B C"
+        "D B F"
+        "D E F"
+        "G G G";
+        max-width: 900px;
+        gap: 1.5rem;
+    }
+
+    main div:nth-child(4) {
+        grid-area: A;
+    }
+
+    main div:nth-child(3) {
+        grid-area: B;
+    }
+
+    main div:nth-child(2) {
+        grid-area: C;
+    }
+
+    main div:nth-child(1) {
+        grid-area: D;
+    }
+
+    main div:nth-child(6) {
+        grid-area: E;
+    }
+
+    main div:nth-child(5) {
+        grid-area: F;
+    }
+
+    #text-mobile {
+        display: none;
+    }
+
+    #text-desktop {
+        padding-top: 52px;
+        display: block;
+    }
+
+    #footer {
+        display: inline;
+        grid-area: G;
+    }
+}
+
