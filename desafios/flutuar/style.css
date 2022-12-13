@@ -1,0 +1,106 @@
+:root {
+    --color-header: hsla(245, 17%, 29%, 1);
+    --color-paragraph: #828282;
+    --color-paragraph-bold: #3F3D56;
+    --color-heading-bold: #EE24FF;
+
+    --color-footer-links: #3F3D56;
+
+    --bg-body: #FFFFFF;
+
+    --ff-heading: 'Dosis', sans-serif;
+    --ff-paragraph: 'Open Sans', sans-serif;
+    --ff-links: font-family: 'Open Sans', sans-serif;
+
+    font-size: 62.5%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.page {
+    max-width: 63rem;
+    margin: auto;
+    text-align: center;
+}
+
+main img {
+    padding: 6.4rem 0 3.2rem 0;
+}
+
+main h1 {
+    font-family: var(--ff-heading);
+    font-weight: bold;
+    color: var(--color-header);
+}
+
+main h1 strong {
+    color: var(--color-heading-bold);
+    font-weight: bold;
+}
+
+main p {
+    font-family: var(--ff-paragraph);
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-paragraph);
+}
+
+main p strong {
+    color: var(--color-paragraph-bold);
+}
+
+#name {
+    color: rgba(130, 130, 130, 1);
+}
+
+.center-paragraphs {
+    padding: 1.6rem 0 3.2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+footer {
+    max-width: 40rem;
+    margin: 6.4rem auto 0;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 4.2rem;
+
+    border-top: 1px solid #ECEFF2;
+    padding-top: 1.6rem;
+}
+
+footer a {
+    text-decoration: none;
+
+    font-family: var(--ff-paragraph);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.2rem;
+    color: var(--color-footer-links);
+
+    transition: transform .3s;
+
+}
+
+footer a:hover {
+    transform: scale(1.2);
+}
+
+#wave {
+    text-align: center;
+    margin-top: 4rem;
+    width: 100%;
+}
