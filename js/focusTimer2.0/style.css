@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --bg-body: #FFFFFF;
+
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-body);
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+
+    display: flex;
+}
+
+main {
+    width: 82rem;
+
+    align-self: center;
+    justify-self: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: auto;
+}
+
+main span {
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+    font-weight: 500;
+}
+
+.timer-wrapper {
+    width: 32rem;
+    height: 21.4rem;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    gap: 3.2rem;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cards {
+    display: grid;
+    grid-template-areas: "A B" "C D";
+    gap: 3.2rem;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media (max-width: 450px) {
+    body {
+        display: flex;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .timer-wrapper {
+        width: 2.5rem;
+        text-align: center;
+    }
+
+    .cards {
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+}
