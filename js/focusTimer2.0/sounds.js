@@ -11,11 +11,15 @@ const buttonSoundFireplaceActive = document.querySelector('.fireplace-active')
 buttonSoundForest.addEventListener('click', function() {
     buttonSoundForest.classList.add('hide')
     buttonSoundForestActive.classList.remove('hide')
+
+    soundForest.play()
 })
 
 buttonSoundForestActive.addEventListener('click', function() {
     buttonSoundForest.classList.remove('hide')
     buttonSoundForestActive.classList.add('hide')
+
+    soundForest.pause()
 })
 
 buttonSoundRain.addEventListener('click', function() {
@@ -47,3 +51,9 @@ buttonSoundFireplaceActive.addEventListener('click', function() {
     buttonSoundFireplace.classList.remove('hide')
     buttonSoundFireplaceActive.classList.add('hide')
 })
+
+// audios
+
+const soundForest = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/bg-audio.mp3?raw=true")
+
+soundForrest.loop = true
