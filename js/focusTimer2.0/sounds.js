@@ -25,35 +25,56 @@ buttonSoundForestActive.addEventListener('click', function() {
 buttonSoundRain.addEventListener('click', function() {
     buttonSoundRain.classList.add('hide')
     buttonSoundRainActive.classList.remove('hide')
+
+    soundRain.play()
 })
 
 buttonSoundRainActive.addEventListener('click', function() {
     buttonSoundRain.classList.remove('hide')
     buttonSoundRainActive.classList.add('hide')
+
+    soundRain.pause()
 })
 
 buttonSoundCoffee.addEventListener('click', function() {
     buttonSoundCoffee.classList.add('hide')
     buttonSoundCoffeeActive.classList.remove('hide')
+
+    soundCoffee.play()
 })
 
 buttonSoundCoffeeActive.addEventListener('click', function() {
     buttonSoundCoffee.classList.remove('hide')
     buttonSoundCoffeeActive.classList.add('hide')
+
+    soundCoffee.pause()
 })
 
 buttonSoundFireplace.addEventListener('click', function() {
     buttonSoundFireplace.classList.add('hide')
     buttonSoundFireplaceActive.classList.remove('hide')
+
+    soundFireplace.play()
 })
 
 buttonSoundFireplaceActive.addEventListener('click', function() {
     buttonSoundFireplace.classList.remove('hide')
     buttonSoundFireplaceActive.classList.add('hide')
+
+    soundFireplace.pause()
 })
 
 // audios
 
-const soundForest = new Audio("https://github.com/maykbrito/automatic-video-creator/blob/master/audios/bg-audio.mp3?raw=true")
+const soundForest = new Audio("https://github.com/alyssongeremia/explorer-rocketseat/blob/main/js/focusTimer2.0/sounds/Floresta.wav?raw=true")
 
-soundForrest.loop = true
+const soundRain = new Audio("https://github.com/alyssongeremia/explorer-rocketseat/blob/main/js/focusTimer2.0/sounds/Chuva.wav?raw=true")
+
+const soundCoffee = new Audio("https://github.com/alyssongeremia/explorer-rocketseat/blob/main/js/focusTimer2.0/sounds/Cafeteria.wav?raw=true")
+
+const soundFireplace = new Audio("https://github.com/alyssongeremia/explorer-rocketseat/blob/main/js/focusTimer2.0/sounds/Lareira.wav?raw=true")
+
+soundForest.loop = true
+soundRain.loop = true
+soundCoffee.loop = true
+soundFireplace.loop = true

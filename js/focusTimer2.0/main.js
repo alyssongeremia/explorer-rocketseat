@@ -7,6 +7,12 @@ const addMinutes = document.querySelector('.addMinutes')
 const removeMinutes = document.querySelector('.removeMinutes')
 let minutes = minutesDisplay.textContent
 
+let stop = false
+
+buttonStopTimer.addEventListener('click', function() {
+    stop = true
+})
+
 function countdown() {
     setTimeout( function() {
         let seconds = Number(secondsDisplay.textContent)
@@ -20,6 +26,10 @@ function countdown() {
 
         if(minutes <= 0 && seconds == 0) {
             console.log(seconds)
+            return
+        }
+
+        if(stop == true) {
             return
         }
         
