@@ -1,0 +1,23 @@
+{
+  "name": "explorer-rocketseat",
+  "version": "1.0.0",
+  "description": "Repositorio da trilha explorer",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alyssongeremia/explorer-rocketseat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alyssongeremia/explorer-rocketseat/issues"
+  },
+  "homepage": "https://github.com/alyssongeremia/explorer-rocketseat#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
