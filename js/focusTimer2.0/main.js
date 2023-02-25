@@ -19,7 +19,7 @@ function countdown() {
         let minutes = Number(minutesDisplay.textContent)
 
         if(seconds <= 0) {
-            seconds = 10
+            seconds = 60
 
             minutesDisplay.textContent = String(minutes -1).padStart(2, "0")
         }
@@ -30,7 +30,7 @@ function countdown() {
         }
 
         if(stop == true) {
-            return
+            window.location.reload()
         }
         
         secondsDisplay.textContent = String(seconds -1).padStart(2, "0")
