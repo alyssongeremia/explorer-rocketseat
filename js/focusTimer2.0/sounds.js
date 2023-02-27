@@ -78,3 +78,9 @@ soundForest.loop = true
 soundRain.loop = true
 soundCoffee.loop = true
 soundFireplace.loop = true
+
+const volumeForest = document.querySelector('#volForest')
+
+volumeForest.addEventListener('input', function() {
+    soundForest.volume = volumeForest.value
+})

@@ -57,3 +57,19 @@ function removeFiveMinutes() {
 buttonPlayTimer.addEventListener('click', function() {
     countdown()
 })
+
+const btnNightMode = document.querySelector('.btn-day')
+const btnLightMode = document.querySelector('.btn-night')
+const body = document.querySelector('body')
+
+btnNightMode.addEventListener('click', function() {
+    btnNightMode.classList.add('hide')
+    btnLightMode.classList.remove('hide')
+    body.classList.toggle('dark-display')
+})
+
+btnLightMode.addEventListener('click', function() {
+    btnLightMode.classList.add('hide')
+    btnNightMode.classList.remove('hide')
+    body.classList.toggle('dark-display')
+})
